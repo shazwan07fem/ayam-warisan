@@ -1,0 +1,22 @@
+[vars]
+ADMIN_PASSWORD = ""
+# Add any environment variables here
+# Add any environment variables here
+
+[env.production]
+name = "ayam-warisan"
+main = "src/index.js"
+compatibility_date = "2024-09-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "ayam-warisan-db"
+ database_id = "a8e34e4c-f7bb-42f1-93e8-bf4a44270c8e"
+
+[site]
+bucket = "public"
+[build]
+command = "npm run build"
+
+[triggers]
+# optional triggers
